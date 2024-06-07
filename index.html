@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azaan Nabi Khan</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/1b94c89d79.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- --------------Code for Home: --------------------------------------------------------------- -->
+    <div id="header">
+      <div class="container">
+      <nav>
+        <h2 class="logo" onclick="window.location.href='index.html'">Azaan Nabi Khan</h2>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-x" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Data Scientist/Front-End Developer</p>
+        <h1>Hi! I'm <span>Azaan</span><br>from Karachi, Pakistan</h1>
+      </div>
+    </div>
+    </div>
+<!-- -----------------Code for About: ------------------------------------------------------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img1.jpeg">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I'm Azaan Nabi Khan, a computer science student at FAST University Karachi. I have a strong passion for machine learning, deep learning, computer vision, and web development. Through my academic journey and personal projects, I continuously strive to enhance my skills and contribute to innovative technological solutions.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Machine Learning</span><br>Building and Integrating Predictive Machine Learning Models</li>
+                <li><span>Frontend Development</span><br>Building Interactive and appealing Frontend Designs</li>
+                <li><span>Linux OS</span><br>Command over Linux Operating System</li>
+                <li><span>TensorFlow & Keras</span><br>Command over Deep Learning Libraries such as TensorFlow</li>
+                <li><span>Numpy & Pandas</span><br>Data Manipulation through Numpy and Pandas</li>
+                <li><span>SQL</span><br>Relational DataBase Management with SQL</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2022 - Current</span><br>Founder and C++/Python Instructor at AuzTech</li>
+                <li><span>Aug 2023 - Jan 2024</span><br>Student Lab Assistant at FAST University</li>
+                <li><span>Jan 2023 - June 2023</span><br>Teaching Assistant at FAST University</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2021 - Current</span><br>BSCS Student at FAST University (3.75 CGPA)</li>
+                <li><span>2019 - 2021</span><br>A Level Student at Hexis College (3 A*s)</li>
+                <li><span>2008 - 2019</span><br>O Level Student at DHACSS SKBZ Campus (1 A* & 4 As)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- -----------------------------------------Code for Services: -------------------------------------------------------- -->
+
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-laptop-code"></i>
+        <h2>ML Model Building</h2>
+        <p class="text">
+          I offer expert services in building and integrating machine learning models into applications. With a focus on accuracy, efficiency, and reliability, I create tailored solutions that leverage advanced algorithms to meet your unique needs, ensuring seamless integration and optimal performance for your business or project, driving growth and innovation.</p>
+        <a href="#contact" class="btn btn-3">Get in Touch</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p class="text">I provide services in creating stunning and interactive web designs that captivate users and enhance their online experience. My designs are visually appealing and user-friendly, ensuring seamless navigation and engagement. Let me transform your web presence with innovative and responsive designs tailored to your brand and audience.</p>
+        <a href="#contact" class="btn btn-3">Get in Touch</a>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h2>C++/Python Classes</h2>
+        <p class="text">I offer comprehensive C++ and Python classes designed to enhance your programming skills. Whether you're a beginner or looking to advance your expertise, my lessons cover fundamental concepts to complex applications, ensuring a thorough understanding of both languages. Join my classes to boost your coding proficiency and confidence.</p>
+        <a href="#contact" class="btn btn-3">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- -----------------------------------------Code for Portfolio: -------------------------------------------------------- -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+
+      <div class="work">
+        <img src="brain_tumor_bg_pic.jpg">
+        <div class="layer">
+          <h3>Brain Tumor Detector</h3>
+          <p>View the code from my Github</p>
+          <a href="https://github.com/Auzek2002/Brain_Tumor_Detection_CNN_VGG16" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="Cyst- (1).jpg" width="500" height="350">
+        <div class="layer">
+          <h3>Kidney Stone Detector</h3>
+          <p>View the code from my Github</p>
+          <a href="https://github.com/Auzek2002/Kidney_Stone_Tumor_Cyst_Detection" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="weather_2.png">
+        <div class="layer">
+          <h3>Weather App</h3>
+          <p>View the code from my Github</p>
+          <a href="https://github.com/Auzek2002/Weather_App" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="https://github.com/Auzek2002?tab=repositories" target="_blank" class="btn">More on Github</a>
+
+
+<!-- -----------------------------------------Code for Achievements: -------------------------------------------------------- -->
+<div id="achievements">
+  <div class="container">
+    <h1 class="sub-title">My Achievements</h1>
+    <div class="work-list">
+
+      <div class="work">
+        <img src="procom.jpg" width="500" height="550">
+        <div class="layer">
+          <h3>Procom 2024</h3>
+          <p>Winner of AI Showdown</p>
+          <p>@ FAST University Karachi</p>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="brainiac.jpg" width="500" height="550">
+        <div class="layer">
+          <h3>Brainiac 2024</h3>
+          <p>Winner of Brainiac 2024</p>
+          <p>@ FAST University Karachi</p>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="deans.jpg" width="500" height="550">
+        <div class="layer">
+          <h3>Dean's List</h3>
+          <p>Dean's List from 2021 onwards</p>
+          <p>@ FAST University Karachi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- -----------------------------------------Code for Contact: -------------------------------------------------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-regular fa-envelope"></i>azaanukhan@gmail.com</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/azaan_u_khan/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/azaan-nabi-khan-552ba9228/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/c/ultimateazaan" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.facebook.com/azaan%20nabi%20khan" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://github.com/Auzek2002" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="auz copy.PDF" download class="btn btn2">Download CV</a>
+      </div>
+
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>2024 © All rights reserved. Made by Azaan Nabi Khan</p>
+  </div>
+</div>
+
+<!-- -----------------------------------------Code for JS Logic: -------------------------------------------------------- -->
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tab_name){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link")
+        }
+
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab")
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tab_name).classList.add("active-tab")
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw0e3DeFiJFk2T273sXLiy3GhA3BtBkT9YS5baYhDHI1XCTav_t2cVk57sJaJ2IqCbcPA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully!"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
